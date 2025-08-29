@@ -31,7 +31,7 @@ class RFMapperApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-        providers: [BlocProvider(create: (_) => MapperCubit()..init())],
+      providers: [BlocProvider(create: (_) => MapperCubit()..init())],
       child: MaterialApp(
         title: 'WiFi Sonar - Mapeamento de Ambiente',
         theme: ThemeData.dark(useMaterial3: true),
@@ -643,7 +643,7 @@ class HomePage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: ElevatedButton(
-                    onPressed: () => Navigator.of(context).push(
+                          onPressed: () => Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (_) => const ARDemoPage(),
                             ),
@@ -1398,7 +1398,7 @@ class _ARDemoPageState extends State<ARDemoPage> with TickerProviderStateMixin {
 
   double _calculatePolygonArea(List<Offset> poly) {
     double area = 0;
-      for (int i = 0; i < poly.length; i++) {
+    for (int i = 0; i < poly.length; i++) {
       final p0 = poly[i];
       final p1 = poly[(i + 1) % poly.length];
       area += p0.dx * p1.dy - p1.dx * p0.dy;
