@@ -12,3 +12,10 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+WifiVisionCore/Library/
+WifiVisionCore/Temp/
+WifiVisionCore/Obj/
+WifiVisionCore/Build/
+WifiVisionCore/Builds/
+WifiVisionCore/Logs/
+WifiVisionCore/UserSettings/
